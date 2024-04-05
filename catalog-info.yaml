@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-anshu
+  annotations:
+    github.com/project-slug: CTS-Dummy-Org/react-anshu
+spec:
+  type: service
+  owner: user:guest
+  system: default/anshu-app
+  lifecycle: experimental
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: anshu-app
+  description: Enterprise Web Application
+spec:
+  owner: user:guest
+  domain: default
+  lifecycle: experimental
+
+---
